@@ -41,11 +41,12 @@ selectN "PiGRRL 2 controls" \
         "Two buttons + joystick" \
         "Six buttons + joystick" \
         "Adafruit Arcade Bonnet" \
+	"Orange Pi Zero" \
         "Quit without installing"
 RETROGAME_SELECT=$?
 # These are the retrogame.cfg.* filenames on Github corresponding in
 # order to each of the above selections (e.g. retrogame.cfg.pigrrl2):
-CONFIGNAME=(pigrrl2 pocket zero super 2button 6button bonnet)
+CONFIGNAME=(pigrrl2 pocket zero super 2button 6button bonnet opiz)
 
 if [ $RETROGAME_SELECT -lt 8 ]; then
 	if [ -e /boot/retrogame.cfg ]; then
